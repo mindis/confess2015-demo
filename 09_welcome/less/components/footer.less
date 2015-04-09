@@ -1,0 +1,23 @@
+@import "../mixins/definitions.less";
+
+footer {
+    display: flex;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: @heightFooter;
+    background: @colorFooter;
+
+    div.time {
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        padding: 0 20px 0 40px;
+        color: white;
+        font-size: @fontSizeFooter;
+        line-height: @heightFooter;
+        font-weight: 700;
+    }
+}

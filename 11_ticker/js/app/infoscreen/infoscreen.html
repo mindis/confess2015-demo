@@ -1,0 +1,41 @@
+<div class="main">
+    <header>
+        <h1>ConFESS_2015</h1>
+        <div class="banner"></div>
+    </header>
+    <section class="content" ng-controller="sessionController as sessionController">
+        <section class="info" ng-repeat="session in sessionController.sessions" ng-class="{'is-all-room': session.room == 'ALL'}">
+            <h2>{{session.roomName}}</h2>
+            <span class="time">
+                {{session.date.format("HH:mm")}}
+            </span>
+            <div class="speaker" ng-repeat="speaker in session.speakers">
+                <img ng-src="{{speaker.image}}">
+                <div class="info">
+                    <span class="name">
+                        {{speaker.firstName}} {{speaker.lastName}}
+                    </span>
+                    <span class="company">
+                        {{speaker.company}}
+                    </span>
+                </div>
+            </div>
+            <span class="title">
+                {{session.title}}
+            </span>
+            <span class="description">
+                {{session.description}}
+            </span>
+        </section>
+    </section>
+    <footer>
+        <ticker></ticker>
+        <div class="time" ng-controller="clockController as clockController">
+            <span>{{clockController.hours}}</span><span ng-class="{hidden: !clockController.showColon}">:</span><span>{{clockController.minutes}}</span>
+        </div>
+    </footer>
+</div>
+<div class="welcome" ng-controller="welcomeController as welcomeController" ng-show="welcomeController.isVisible">
+    <div class="mood"></div>
+    <h1>Welcome to ConFESS_2015</h1>
+</div>

@@ -1,0 +1,26 @@
+@import "../mixins/definitions.less";
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    color: @colorText;
+}
+
+div.wrapper,
+div.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}

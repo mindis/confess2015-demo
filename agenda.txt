@@ -1,0 +1,60 @@
+- Show final product
+- Show data JSON
+
+- 01
+    - Empty HTML
+    - JSON Data
+
+- 02
+    - Basic HTML Structure
+    - How to start creating the design/layout
+
+- 03
+    - Styled HTML
+    - Introduction to Less (slides)
+    - Introduction to Node.js (slides)
+    - Install LESS
+    - Create basic styling
+    - Compile less
+
+- 04
+    - Introduction to Gulp (slides)
+    - Create package.json
+    - Create gulpfile
+    - Create tasks for build, clean and watch
+
+- 05
+    - Introduction to Bower (slides)
+    - Create bower.json and .bowerrc
+    - Install dependencies
+    - Add JS to HTML
+
+- 06
+    - Getting started with Angular.js (slides)
+    - Introducing require.js (slides)
+    - Implement the clock
+
+- 07
+    - Diving deeper into Angular.js
+    - Load the JSON using Ajax
+    - Prepare the data
+    - Implement services and controllers required to show the sessions
+
+- 08
+    - JavaScript Build
+    - Create Gulp tasks to build and clean the JavaScript
+    - Create a production HTML file
+
+- 09
+    - Adding a Welcome-Screen
+    - Add controller to show a welcome screen
+
+- 10
+    - Adding animations
+    - Using nganimate and what to take care of
+
+- 11
+    - Implementing the ticker
+    - Loading ticker data via JSON
+    - Implement the ticker
+    - Make the ticker scroll
